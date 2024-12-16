@@ -1,8 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:skills_opdracht/components/bigButton.dart';
-import 'package:skills_opdracht/components/ownCard.dart';
 
-class Kaart extends StatelessWidget {
+class Showattractie extends StatelessWidget {
+  final int id;
+  const Showattractie({Key? key, required this.id}) : super(key: key);
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -10,11 +12,12 @@ class Kaart extends StatelessWidget {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            OwnCard(
-                url: 'lib/assets/Amsterdam.png',
-                title: 'Kaart',
-                subtitle: 'de kaart van Amsterdam',
-                description: 'Dit is de kaart van Amsterdam'),
+            SizedBox(
+              height: 100,
+            ),
+            Text('Attracties pagina $id',
+                textAlign: TextAlign.center,
+                style: TextStyle(fontSize: 60, fontWeight: FontWeight.bold)),
             SizedBox(
               height: 20,
             ),

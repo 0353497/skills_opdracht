@@ -1,4 +1,5 @@
-import 'dart:math';
+import 'package:skills_opdracht/components/bigButton.dart';
+import 'package:skills_opdracht/components/ownCard.dart';
 
 import 'package:flutter/material.dart';
 
@@ -33,6 +34,7 @@ class HomePage extends StatelessWidget {
               subtitle: 'Een geweldige toren',
               description:
                   'De Montelbaanstoren is een toren in Amsterdam, gelegen aan de Oudeschans bij de Lastage, een voormalige haven in het oosten van de oude binnenstad.',
+              routeUrl: '/attractie/1',
             ),
             SizedBox(
               height: 20,
@@ -57,91 +59,30 @@ class HomePage extends StatelessWidget {
               height: 20,
             ),
             //add 3 big buttons
-            BigButton(text: 'Kaart'),
+            BigButton(
+              text: 'Kaart',
+              href: '/kaart',
+            ),
             SizedBox(
               height: 20,
             ),
-            BigButton(text: 'Hulp'),
+            BigButton(
+              text: 'Hulp',
+              href: '/hulp',
+            ),
             SizedBox(
               height: 20,
             ),
-            BigButton(text: 'Attracties'),
+            BigButton(
+              text: 'Attracties',
+              href: '/attracties',
+            ),
+            SizedBox(
+              height: 20,
+            ),
           ],
         ),
       ),
     ));
-  }
-}
-
-class BigButton extends StatelessWidget {
-  const BigButton({
-    super.key,
-    required String text,
-  });
-
-  @override
-  Widget build(BuildContext context) {
-    return FilledButton(
-      onPressed: () {},
-      child: const Text('Kaart'),
-      style: ButtonStyle(
-          elevation: WidgetStatePropertyAll(10),
-          padding: WidgetStatePropertyAll(
-              EdgeInsets.symmetric(vertical: 30, horizontal: 60)),
-          backgroundColor: WidgetStatePropertyAll(Colors.blue)),
-    );
-  }
-}
-
-class OwnCard extends StatelessWidget {
-  final String url;
-  final String title;
-  final String subtitle;
-  final String description;
-
-  const OwnCard({
-    super.key,
-    required this.url,
-    required this.title,
-    required this.subtitle,
-    required this.description,
-  });
-
-  @override
-  Widget build(BuildContext context) {
-    return Card(
-      elevation: 10,
-      shape: RoundedRectangleBorder(
-        borderRadius: BorderRadius.circular(20), // Rounded corners
-      ),
-      child: Padding(
-        padding: const EdgeInsets.all(
-            16.0), // Adjust the value for padding around the content
-        child: Column(
-          crossAxisAlignment: CrossAxisAlignment.start,
-          children: [
-            Image.network(url),
-            Text(
-              title,
-              style: TextStyle(fontSize: 32, fontWeight: FontWeight.bold),
-            ),
-            SizedBox(
-              height: 4,
-            ),
-            Text(
-              subtitle,
-              style: TextStyle(fontSize: 16, color: Colors.grey),
-            ),
-            SizedBox(
-              height: 18,
-            ),
-            Text(
-              description,
-              style: TextStyle(fontSize: 16, color: Colors.grey),
-            ),
-          ],
-        ),
-      ),
-    );
   }
 }
