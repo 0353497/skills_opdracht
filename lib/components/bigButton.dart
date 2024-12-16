@@ -16,12 +16,12 @@ class BigButton extends StatelessWidget {
       onPressed: () {
         Navigator.pushNamed(context, href);
       },
-      child: Text(text),
-      style: ButtonStyle(
+      style: const ButtonStyle(
           elevation: WidgetStatePropertyAll(10),
           padding: WidgetStatePropertyAll(
               EdgeInsets.symmetric(vertical: 30, horizontal: 60)),
           backgroundColor: WidgetStatePropertyAll(Colors.blue)),
+      child: Text(text),
     );
   }
 }

@@ -12,16 +12,16 @@ class Showattractie extends StatelessWidget {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            SizedBox(
+            const SizedBox(
               height: 100,
             ),
             Text('Attracties pagina $id',
                 textAlign: TextAlign.center,
-                style: TextStyle(fontSize: 60, fontWeight: FontWeight.bold)),
-            SizedBox(
+                style: const TextStyle(fontSize: 60, fontWeight: FontWeight.bold)),
+            const SizedBox(
               height: 20,
             ),
-            BigButton(text: 'To Home', href: '/'),
+            const BigButton(text: 'To Home', href: '/'),
           ],
         ),
       ),

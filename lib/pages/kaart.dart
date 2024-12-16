@@ -5,7 +5,7 @@ import 'package:skills_opdracht/components/ownCard.dart';
 class Kaart extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
+    return const Scaffold(
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
