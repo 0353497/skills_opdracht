@@ -1,83 +1,103 @@
+import 'dart:convert';
+import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:skills_opdracht/components/bigButton.dart';
 import 'package:skills_opdracht/components/ownCard.dart';
 
-import 'package:flutter/material.dart';
+class HomePage extends StatefulWidget {
+  @override
+  _HomePageState createState() => _HomePageState();
+}
 
-class HomePage extends StatelessWidget {
+class _HomePageState extends State<HomePage> {
+  List<dynamic> attracties = [];
+
+  @override
+  void initState() {
+    super.initState();
+    _loadAttracties();
+  }
+
+  Future<void> _loadAttracties() async {
+    try {
+      // Load JSON data from assets
+      String jsonString =
+          await rootBundle.loadString('lib/assets/kaarten.json');
+      List<dynamic> jsonData = jsonDecode(jsonString);
+
+      // Update the state with the data
+      setState(() {
+        attracties = jsonData;
+      });
+    } catch (e) {
+      setState(() {
+        attracties = [];
+      });
+    }
+  }
+
   @override
   Widget build(BuildContext context) {
-    return const Scaffold(
+    return Scaffold(
         body: SingleChildScrollView(
       child: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            SizedBox(
+            const SizedBox(
               height: 100,
             ),
-            Text(
+            const Text(
               '750 Jaar Amsterdam',
               textAlign: TextAlign.center,
               style: TextStyle(fontSize: 60, fontWeight: FontWeight.bold),
             ),
-            Text(
+            const Text(
               'XXX',
               style: TextStyle(fontSize: 60, fontWeight: FontWeight.bold),
             ),
-            SizedBox(
+            const SizedBox(
               height: 100,
             ),
+            Column(
+              children: [
+                if (attracties.isNotEmpty)
+                  ...List.generate(3, (i) {
+                    return Column(
+                      children: [
             OwnCard(
-              url:
-                  'https://images.unsplash.com/photo-1731370963500-b836d108f7c9?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
-              title: 'Montelbaanstoren',
-              subtitle: 'Een geweldige toren',
-              description:
-                  'De Montelbaanstoren is een toren in Amsterdam, gelegen aan de Oudeschans bij de Lastage, een voormalige haven in het oosten van de oude binnenstad.',
-              routeUrl: '/attractie/1',
+                          url: attracties[i]['photo'] ?? '',
+                          title: attracties[i]['title'] ?? '',
+                          subtitle: attracties[i]['subtitle'] ?? '',
+                          description: attracties[i]['description'] ?? '',
+                          routeUrl: '/attractie/${attracties[i]['id']}',
             ),
-            SizedBox(
-              height: 20,
+                        SizedBox(height: 20),
+                      ],
+                    );
+                  }),
+                if (attracties.isEmpty) CircularProgressIndicator(),
+              ],
             ),
-            OwnCard(
-                url:
-                    'https://images.unsplash.com/photo-1731370963500-b836d108f7c9?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
-                title: 'Rijksmuseum',
-                subtitle: 'Een bijzondere ervaring',
-                description:
-                    'Het Rijksmuseum is een Nederlands rijksmuseum voor kunst en geschiedenis in Amsterdam.'),
-            SizedBox(
-              height: 20,
-            ),
-            OwnCard(
-                url:
-                    'https://images.unsplash.com/photo-1731370963500-b836d108f7c9?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
-                title: 'Anne Frank Huis',
-                subtitle: 'Een indrukwekkende ervaring',
-                description: 'Het Anne Frank Huis is een museum in Amsterdam.'),
-            SizedBox(
-              height: 20,
-            ),
-            //add 3 big buttons
-            BigButton(
+            const BigButton(
               text: 'Kaart',
               href: '/kaart',
             ),
-            SizedBox(
+            const SizedBox(
               height: 20,
             ),
-            BigButton(
+            const BigButton(
               text: 'Hulp',
               href: '/hulp',
             ),
-            SizedBox(
+            const SizedBox(
               height: 20,
             ),
-            BigButton(
+            const BigButton(
               text: 'Attracties',
               href: '/attracties',
             ),
-            SizedBox(
+            const SizedBox(
               height: 20,
             ),
           ],
