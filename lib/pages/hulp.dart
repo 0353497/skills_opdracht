@@ -24,7 +24,7 @@ class Hulp extends StatelessWidget {
                 shrinkWrap:
                     true, // To make the ListView take only as much space as needed
                 physics:
-                    NeverScrollableScrollPhysics(), // Disable scrolling as it's already inside SingleChildScrollView
+                    const NeverScrollableScrollPhysics(), // Disable scrolling as it's already inside SingleChildScrollView
                 itemCount: 13,
                 itemBuilder: (context, index) {
                   if (index < 3) {

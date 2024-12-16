@@ -1,0 +1,177 @@
+[
+    {
+        "id": 1,
+        "photo": "https://picsum.photos/200",
+        "title": "Rijksmuseum",
+        "subtitle": "Museum",
+        "description": "Het Rijksmuseum is een Nederlands nationaal museum gewijd aan kunst en geschiedenis in Amsterdam."
+    },
+    {
+        "id": 2,
+        "photo": "https://picsum.photos/200",
+        "title": "Van Gogh Museum",
+        "subtitle": "Museum",
+        "description": "Het Van Gogh Museum is gewijd aan de werken van Vincent van Gogh en zijn tijdgenoten."
+    },
+    {
+        "id": 3,
+        "photo": "https://picsum.photos/200",
+        "title": "Anne Frank Huis",
+        "subtitle": "Historische Plaats",
+        "description": "Het Anne Frank Huis is een schrijvershuis en biografisch museum gewijd aan de Joodse oorlogsdagboekschrijfster Anne Frank."
+    },
+    {
+        "id": 4,
+        "photo": "https://picsum.photos/200",
+        "title": "Vondelpark",
+        "subtitle": "Park",
+        "description": "Het Vondelpark is een openbaar stadspark van 47 hectare in Amsterdam, Nederland."
+    },
+    {
+        "id": 5,
+        "photo": "https://picsum.photos/200",
+        "title": "De Dam",
+        "subtitle": "Plein",
+        "description": "De Dam is een plein in Amsterdam, de hoofdstad van Nederland."
+    },
+    {
+        "id": 6,
+        "photo": "https://picsum.photos/200",
+        "title": "Heineken Experience",
+        "subtitle": "Brouwerij",
+        "description": "De Heineken Experience is een historische brouwerij en bezoekerscentrum voor het internationaal gedistribueerde Nederlandse pils, Heineken bier."
+    },
+    {
+        "id": 7,
+        "photo": "https://picsum.photos/200",
+        "title": "Amsterdamse Grachtenrondvaart",
+        "subtitle": "Tour",
+        "description": "Een rondvaart door de grachten is een populaire manier om de stad vanaf het water te zien en meer te leren over de geschiedenis."
+    },
+    {
+        "id": 8,
+        "photo": "https://picsum.photos/200",
+        "title": "Bloemenmarkt",
+        "subtitle": "Markt",
+        "description": "De Bloemenmarkt is 's werelds enige drijvende bloemenmarkt."
+    },
+    {
+        "id": 9,
+        "photo": "https://picsum.photos/200",
+        "title": "Koninklijk Paleis Amsterdam",
+        "subtitle": "Paleis",
+        "description": "Het Koninklijk Paleis Amsterdam is een van de drie paleizen in Nederland die bij wet ter beschikking staan van de monarch."
+    },
+    {
+        "id": 10,
+        "photo": "https://picsum.photos/200",
+        "title": "Artis Zoo",
+        "subtitle": "Dierentuin",
+        "description": "Artis, kort voor Natura Artis Magistra, is een dierentuin in het centrum van Amsterdam."
+    },
+    {
+        "id": 11,
+        "photo": "https://picsum.photos/200",
+        "title": "NEMO Science Museum",
+        "subtitle": "Museum",
+        "description": "NEMO Science Museum is een wetenschapscentrum in Amsterdam, Nederland."
+    },
+    {
+        "id": 12,
+        "photo": "https://picsum.photos/200",
+        "title": "Stedelijk Museum",
+        "subtitle": "Museum",
+        "description": "Het Stedelijk Museum Amsterdam is een museum voor moderne kunst, hedendaagse kunst en design."
+    },
+    {
+        "id": 13,
+        "photo": "https://picsum.photos/200",
+        "title": "Rembrandthuis Museum",
+        "subtitle": "Museum",
+        "description": "Het Rembrandthuis Museum is een historisch huis en kunstmuseum in Amsterdam."
+    },
+    {
+        "id": 14,
+        "photo": "https://picsum.photos/200",
+        "title": "Amsterdam Museum",
+        "subtitle": "Museum",
+        "description": "Het Amsterdam Museum, tot 2011 het Amsterdams Historisch Museum genoemd, is een museum over de geschiedenis van Amsterdam."
+    },
+    {
+        "id": 15,
+        "photo": "https://picsum.photos/200",
+        "title": "Moco Museum",
+        "subtitle": "Museum",
+        "description": "Het Moco Museum is een onafhankelijk museum gewijd aan moderne en hedendaagse kunst."
+    },
+    {
+        "id": 16,
+        "photo": "https://picsum.photos/200",
+        "title": "A'DAM Lookout",
+        "subtitle": "Observatiedek",
+        "description": "A'DAM Lookout is een observatiedek met een ongeëvenaard panoramisch uitzicht over Amsterdam."
+    },
+    {
+        "id": 17,
+        "photo": "https://picsum.photos/200",
+        "title": "Het Scheepvaartmuseum",
+        "subtitle": "Museum",
+        "description": "Het Scheepvaartmuseum is een maritiem museum in Amsterdam, Nederland."
+    },
+    {
+        "id": 18,
+        "photo": "https://picsum.photos/200",
+        "title": "Hermitage Amsterdam",
+        "subtitle": "Museum",
+        "description": "Hermitage Amsterdam is een dependance van het Hermitage Museum in Sint-Petersburg, Rusland."
+    },
+    {
+        "id": 19,
+        "photo": "https://picsum.photos/200",
+        "title": "Foam Fotografiemuseum",
+        "subtitle": "Museum",
+        "description": "Foam of Fotografiemuseum Amsterdam is een fotografiemuseum aan de Keizersgracht in Amsterdam."
+    },
+    {
+        "id": 20,
+        "photo": "https://picsum.photos/200",
+        "title": "Tassenmuseum",
+        "subtitle": "Museum",
+        "description": "Het Tassenmuseum is een museum gewijd aan de geschiedenis van tassen, handtassen en accessoires."
+    },
+    {
+        "id": 21,
+        "photo": "https://picsum.photos/200",
+        "title": "Tropenmuseum",
+        "subtitle": "Museum",
+        "description": "Het Tropenmuseum is een volkenkundig museum in Amsterdam."
+    },
+    {
+        "id": 22,
+        "photo": "https://picsum.photos/200",
+        "title": "EYE Filmmuseum",
+        "subtitle": "Museum",
+        "description": "Het EYE Filmmuseum is een Nederlands archief en museum in Amsterdam dat zowel Nederlandse als buitenlandse films bewaart en presenteert."
+    },
+    {
+        "id": 23,
+        "photo": "https://picsum.photos/200",
+        "title": "Micropia",
+        "subtitle": "Museum",
+        "description": "Micropia is een museum van microben in Amsterdam."
+    },
+    {
+        "id": 24,
+        "photo": "https://picsum.photos/200",
+        "title": "Ons' Lieve Heer op Solder",
+        "subtitle": "Museum",
+        "description": "Ons' Lieve Heer op Solder is een 17e-eeuws grachtenpand, huiskerk en museum in het stadscentrum van Amsterdam."
+    },
+    {
+        "id": 25,
+        "photo": "https://picsum.photos/200",
+        "title": "The Amsterdam Dungeon",
+        "subtitle": "Attractie",
+        "description": "The Amsterdam Dungeon is een toeristische attractie in Amsterdam, Nederland."
+    }
+]

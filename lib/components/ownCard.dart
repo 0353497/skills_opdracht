@@ -53,14 +53,14 @@ class OwnCard extends StatelessWidget {
                 title,
                 style: TextStyle(fontSize: 32, fontWeight: FontWeight.bold),
               ),
-              SizedBox(
+              const SizedBox(
                 height: 4,
               ),
               Text(
                 subtitle,
                 style: TextStyle(fontSize: 16, color: Colors.grey),
               ),
-              SizedBox(
+              const SizedBox(
                 height: 18,
               ),
               Text(
