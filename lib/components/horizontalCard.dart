@@ -23,8 +23,8 @@ class Horizontalcard extends StatelessWidget {
         }
       },
       child: Card(
-        elevation: 5,
-        margin: const EdgeInsets.only(bottom: 5),
+        elevation: 8,
+        margin: const EdgeInsets.only(bottom: 8),
         shape: RoundedRectangleBorder(
           borderRadius: BorderRadius.circular(12), // Rounded corners
         ),

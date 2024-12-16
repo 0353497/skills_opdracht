@@ -14,7 +14,10 @@ class Kaart extends StatelessWidget {
                 url: 'lib/assets/Amsterdam.png',
                 title: 'Kaart',
                 subtitle: 'de kaart van Amsterdam',
-                description: 'Dit is de kaart van Amsterdam'),
+              description: 'Dit is de kaart van Amsterdam',
+              routeUrl:
+                  'https://www.google.com/maps/place/Amsterdam/@52.354551,4.7391541,11z/data=!3m1!4b1!4m6!3m5!1s0x47c63fb5949a7755:0x6600fd4cb7c0af8d!8m2!3d52.3675734!4d4.9041389!16zL20vMGszcA?entry=ttu&g_ep=EgoyMDI0MTIxMS4wIKXMDSoASAFQAw%3D%3D',
+            ),
             SizedBox(
               height: 20,
             ),

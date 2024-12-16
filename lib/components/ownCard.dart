@@ -16,14 +16,22 @@ class OwnCard extends StatelessWidget {
     this.routeUrl,
   });
 
+  void _handleTap(BuildContext context) async {
+    if (routeUrl != null) {
+      // Check if it's an external URL or an internal route
+      if (Uri.tryParse(routeUrl!)?.hasAbsolutePath == true) {
+        // Launch external URL
+      } else {
+        // Handle internal route navigation
+        Navigator.pushNamed(context, routeUrl!);
+      }
+    }
+  }
+
   @override
   Widget build(BuildContext context) {
     return GestureDetector(
-      onTap: () {
-        if (routeUrl != null) {
-          Navigator.pushNamed(context, routeUrl!);
-        }
-      },
+      onTap: () => _handleTap(context),
       child: Card(
         elevation: 10,
         shape: RoundedRectangleBorder(

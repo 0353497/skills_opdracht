@@ -40,7 +40,9 @@ class _AttractiesState extends State<Attracties> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.blue[100],
       body: Column(
+        
         children: [
           const SizedBox(height: 60),
           const Text(
