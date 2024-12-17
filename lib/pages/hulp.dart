@@ -6,6 +6,7 @@ class Hulp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.blue[100],
       body: SingleChildScrollView(
         child: Center(
           child: Column(

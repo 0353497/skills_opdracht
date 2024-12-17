@@ -42,6 +42,7 @@ class _ShowattractieState extends State<Showattractie> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.blue[100],
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,

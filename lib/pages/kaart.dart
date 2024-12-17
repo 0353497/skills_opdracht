@@ -6,6 +6,7 @@ class Kaart extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return const Scaffold(
+      backgroundColor: Color.fromRGBO(187, 222, 251, 1),
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,

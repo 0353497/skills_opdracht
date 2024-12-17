@@ -39,6 +39,7 @@ class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+        backgroundColor: Colors.blue[100],
         body: SingleChildScrollView(
       child: Center(
         child: Column(
@@ -82,6 +83,7 @@ class _HomePageState extends State<HomePage> {
             const BigButton(
               text: 'Kaart',
               href: '/kaart',
+                  width: 200,
             ),
             const SizedBox(
               height: 20,
@@ -89,6 +91,7 @@ class _HomePageState extends State<HomePage> {
             const BigButton(
               text: 'Hulp',
               href: '/hulp',
+                  width: 200,
             ),
             const SizedBox(
               height: 20,
@@ -96,6 +99,7 @@ class _HomePageState extends State<HomePage> {
             const BigButton(
               text: 'Attracties',
               href: '/attracties',
+                  width: 200,
             ),
             const SizedBox(
               height: 20,
